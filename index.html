@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <title>Formularze html</title>
+    <link rel="stylesheet" href="wlasnestylowanie.css">
+</head>
+
+
+<body>
+<!-- E-mail wygląda następująco -->
+   <!-- Po lewej stronie wyświetla się wszystko z "name" Po prawej to co wpiszesz lub wybierzesz (value) -->
+   <!-- FOR oraz ID musi byc identyczne najlepiej bez polskich liter -->
+   <!-- Jeżeli nie wyrazimy zgody to po prostu nie dostaniemy informacji na ten temat -->
+   <!-- mozna tez zrobic tak <label><input type="text" name="Nazwisko" id="nazwisko" value="">TEKST</label>  -->
+   <!-- jezeli wpisujemy np nr tel to mozna usunac atrybut value -->
+    <form action="https://formspree.io/5piotrlew@gmail.com" method="POST">
+        <label for="imie">Imię:</label><br/>
+        <input type="text" name="Imię" id="imie" value="">
+        <br/>
+        <label for="nazwisko">Nazwisko:</label><br/>
+        <input type="text" name="Nazwisko" id="nazwisko" value="">
+        <br/>
+        <label for="mail">E-mail:</label><br/>
+        <input type="email" name="E-mail" id="mail" value="">
+        <br/>
+        <label for="nrtel">Numer telefonu:</label><br/>
+        <input type="tel" name="Numer telefonu" id="nrtel" value="">
+        <br/><br/>
+        <p>Wybierz swoje miasto:</p>
+        
+        <!--  
+        <input type="radio" name="Miasto" id="krakow" value="Kraków">
+        <label for="krakow">Kraków</label> <br/>
+        <input type="radio" name="Miasto" id="warszawa" value="Warszawa">
+        <label for="warszawa">Warszawa</label> <br/>
+        <input type="radio" name="Miasto" id="gdansk" value="Gdańsk"> 
+        <label for="gdansk">Gdańsk</label>
+        -->
+        <label for="city"></label>
+        <select name="Miasto" id="city" class="city">
+            <option value="Krakow">Krakow</option>
+            <option value="Warszawa">Warszawa</option>
+            <option value="Gdansk">Gdansk</option>
+            
+            
+            
+        </select>
+        
+        
+
+        <p>Wybierz swoją płeć:</p>
+        <input type="radio" name="Płeć" id="mezczyzna" value="Mężczyzna">
+        <label for="male">Mężczyzna</label> <br/>
+        <input type="radio" name="Płeć" id="kobieta" value="Kobieta"> 
+        <label for="female">Kobieta</label> <br/><br/>
+        
+        <label for="wiadomosc">Wiadomość:</label><br/>
+        <textarea name="Wiadomość" id="wiadomosc" placeholder="Twoja wiadomość"></textarea>
+        <br/>
+        
+        <input type="checkbox" name="Zgoda" id="zgoda" value="Wyrażona">         
+        <label for="zgoda">Wyrażam zgodę na przetwarzanie danych osobowych</label>
+        
+        <br/><br/>
+        
+
+        <input type="submit" value="SEND">
+    </form>
+
+  
+   
+   
+
+</body>
+
+</html>

@@ -1,0 +1,42 @@
+*:focus {
+outline: none;
+}
+
+
+*{
+    background-color: #213b50;
+    color: #ffffff;
+}
+
+input, textarea, option, select{
+    background-color: #2b4a64;
+    border: 2px solid #2b4a64
+}
+
+select:focus, option:focus, input:focus, textarea:focus{
+    background-color: #4e708c;
+    border: 2px solid #ffffff;
+    
+}
+
+#city{
+    width:176px;
+}
+
+input[type="submit"]{
+    background-color: green;
+    text-align: center;
+    width: 80px;
+    height: 38px;
+    font-weight: bold;
+}
+
+input:hover[type="submit"]{
+    background-color: forestgreen;
+}
+    
+textarea{
+        width: 176px;
+        height: 100px;
+    }
+    

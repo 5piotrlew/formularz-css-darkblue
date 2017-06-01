@@ -1,0 +1,75 @@
+h1 {
+    color: rebeccapurple;
+    margin-bottom: 0;
+}
+
+em {
+    color: cornflowerblue;
+}
+
+
+/* formularz Klienta*/
+
+#client {
+    padding-bottom: 15px;
+    padding-left: 10px;
+}
+
+
+/*formularz z książkami*/
+
+#books {
+    padding-left: 10px;
+    padding-bottom: 40px;
+}
+
+
+/* wspólne cechy formularzy*/
+
+.forms {
+    border: 2px solid gray;
+    margin-top: 15px;
+    width: 700px;
+}
+
+
+/* dotyczy #client i #books - wycięcie border poprzez zmianę koloru tła dla tekstu "Customer info" i "Books" */
+
+.titleforms {
+    padding-left: 2px;
+    margin-top: -10px;
+    margin-left: 10px;
+    background-color: white;
+    width: 45px;
+}
+
+div#client>p {
+    width: 93px;
+    /*powyżej nadpisanie szerokości dla tekstu "Customer info" */
+    padding-right: 1px;
+    text-align: center;
+    margin-right: 0;
+}
+
+div#client label {
+    padding-left: 65px;
+    padding-bottom: 70px;
+}
+
+div#books label#bookchild {
+    padding-left: 65px;
+}
+
+div#books input#quantity {
+    width: 250px;
+}
+
+div#books label#quantitychild {
+    padding-left: 10px;
+}
+
+#submit {
+    margin-top: 10px;
+    border-radius: 5px;
+    background-color: white;
+}
